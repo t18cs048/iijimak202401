@@ -15,7 +15,6 @@ nav > ul > li {
     margin-right: 45px;
     
     background-color: #333;
-    overflow: hidden;
     position: fixed; 
     top: 0;
     width: 100%;
