@@ -122,17 +122,21 @@ section{
   border-color:#fff;
 }
 
+
 /*==画像スライダー==*/
-/*==================================================
-スライダーのためのcss
-===================================*/
-.slider img {
-    width:100%;/*スライダー内の画像を横幅100%に*/
-    height:auto;
-}
-
-/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
-
-.slider .slick-slide {
-    margin:0 10px;/*スライド左右の余白調整*/
+.slideshow-fade{
+    position: relative;
+    width: 280px;
+    height: 200px;
+    li{
+        list-style: none;
+        width: 100%;
+        height: 100%;
+        img{
+          position: absolute;
+          left: 30px;
+          top: 50px;
+          width: 100%;
+        }
+    }
 }
