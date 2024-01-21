@@ -1,7 +1,8 @@
 /*========= 上部固定させるためのCSS ===============*/
 #header{
+	top: 0px;
 	height: 70px;/*高さ指定*/
-	width:99%;/*横幅指定*/
+	width:100%;/*横幅指定*/
 	/*以下はレイアウトのためのCSS*/
 	display: flex;
 	justify-content: space-between;
