@@ -83,8 +83,8 @@ section{
     /*周囲の線の起点とするためrelativeを指定*/
   position: relative;
     /*円の形状*/
-  width:100px;
-  height:100px;
+  width:50px;
+  height:50px;
     box-sizing: border-box;
     padding: 0 10px;
   text-align: center;
