@@ -15,16 +15,8 @@
 	position: fixed
 }
 
-/*JSを使いfixedクラスが付与された際の設定*/
-/*#header.fixed{
-	position: fixed;/*fixedを設定して固定*/
-/*	z-index: 999;/*最前面へ*/
-/*	top:0;/*位置指定*/
-/*	left:0;/*位置指定*/
-/*}*/
 
-
-/*========= 以下は検証用のレイアウトのためのCSS ===============*/
+/*===ページ内エリア項目===*/
 nav ul{
 	list-style: none;
 	display: flex;
@@ -82,4 +74,50 @@ section{
   	opacity: 1;
 	transform: translateY(100px);
   }
+}
+
+/*==ページダウンボタン==*/
+/*== 押し込む円 */
+
+.pushcircle{
+    /*周囲の線の起点とするためrelativeを指定*/
+  position: relative;
+    /*円の形状*/
+  width:100px;
+  height:100px;
+    box-sizing: border-box;
+    padding: 0 10px;
+  text-align: center;
+  background:#333;
+  border-radius:50%;
+  color: #fff;
+    text-decoration: none;
+    outline: none;
+    /*天地中央にテキストを配置*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*内側の線*/
+.pushcircle:after {
+  content: "";
+    /*絶対配置で線の位置を決める*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    /*線の形状*/
+    width: 85%;
+  height: 85%;
+  border: 2px solid #333;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1.1);
+    /*アニメーションの指定*/
+    transition: .3s ease; 
+  }
+
+/*hoverをしたら枠線が小さくなる*/
+.pushcircle:hover:after {
+  transform: translate(-50%, -50%) scale(1);
+    border-color:#fff;
 }
