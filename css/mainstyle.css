@@ -23,17 +23,17 @@
 
 /*========= 以下は検証用のレイアウトのためのCSS ===============*/
 nav ul{
-list-style: none;
-display: flex;
-justify-content: center;
+	list-style: none;
+	display: flex;
+	justify-content: center;
 }
 
 nav ul li a{
-text-decoration: none;
-color: #666;
-padding:10px;
+	text-decoration: none;
+	color: #666;
+	padding:10px;
 }
 
 section{
-padding:300px 0;
+	padding:300px 0;
 }
