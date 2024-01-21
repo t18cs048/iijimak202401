@@ -1,24 +1,36 @@
-<html>
-<head>
-    <title>株式会社飯島工事</title>
-    <link rel="stylesheet" href="mainstyle.css">
+head終了タグ直前に自作のCSSを読み込みます。
+<link rel="stylesheet" type="text/css" href="css/mainstyle.css">
 </head>
-<body>
-<div class="horizontal-navbar">
-<nav role="navigation">
-    <ul>
-      <li class="menu-item-has-children">
-        <a href="#">企業情報</a>
-        <ul class="sub-menu">
-          <li><a href="#">会社概要</a></li>
-          <li><a href="#">社長挨拶</a></li>
-        </ul>
-      </li>
-      <li><a href="#">施工実績</a></li>
-      <li><a href="#">ニュース</a></li>
-      <li><a href="#">採用情報</a></li>
-    </ul>
-  </nav>
-</div>
+body内に上部固定させるナビゲーションとコンテンツのHTMLを記載します。
+<header id="header">
+<h1>Logo</h1>
+<nav>
+<ul id="g-navi">
+<li><a href="#area-1">Area1</a></li>
+<li><a href="#area-2">Area2</a></li>
+<li><a href="#area-3">Area3</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id="area-1">
+<h2>Area 1</h2>
+<p>内容が入ります。</p>
+<!--/area1--></section>
+<section id="area-2">
+<h2>Area 2</h2>
+<p>内容が入ります。</p>
+<!--/area2--></section>
+<section id="area-3">
+<h2>Area 3</h2>
+<p>内容が入ります。</p>
+<!--/area3--></section>
+<!--/main--></main>
+<footer id="footer">
+<small>&copy; copyright.</small> 
+</footer>
+body 終了タグ直前に jQuery、動きを制御する自作のJS の2 つを読み込みます。
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--自作のJS-->
+<script src="js/mainstye.js"></script>
 </body>
-</html>
