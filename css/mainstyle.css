@@ -15,9 +15,9 @@
 /*JSを使いfixedクラスが付与された際の設定*/
 #header.fixed{
 	position: fixed;/*fixedを設定して固定*/
-  z-index: 999;/*最前面へ*/
-  top:0;/*位置指定*/
-  left:0;/*位置指定*/
+	z-index: 999;/*最前面へ*/
+	top:0;/*位置指定*/
+	left:0;/*位置指定*/
 }
 
 
