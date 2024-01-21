@@ -1,3 +1,12 @@
+/* メニュー最上位表示 */
+.horizontal-navbar {
+  background-color: #333;
+  overflow: hidden;
+  position: fixed; 
+  top: 0;
+  width: 100%;
+}
+
 /* 親メニュー - Parent nav */
 nav > ul > li {
     list-style: none;
@@ -42,3 +51,4 @@ nav .menu-item-has-children:hover ul {
   nav li.menu-item-has-children li a:hover {
     background: #0090aa;
   }
+
